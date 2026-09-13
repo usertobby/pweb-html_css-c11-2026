@@ -29,12 +29,12 @@ body::before{
     z-index: -1;
     opacity: .85;
     background:
-        radial-gradient(circle at 15% 14%, #fff 0 1px, transparent 1.6px),
-        radial-gradient(circle at 47% 4%, #fff9c8 0 1.5px, transparent 2px),
-        radial-gradient(circle at 82% 22%, #fff 0 1px, transparent 1.6px),
-        radial-gradient(circle at 92% 65%, #fff9c8 0 1px, transparent 1.6px),
-        radial-gradient(ellipse at 63% 10%, #214b9c 0, transparent 36%),
-        linear-gradient(150deg, #06132f 10%, #0b2860 55%, #071a40);
+    radial-gradient(circle at 15% 14%, #fff 0 1px, transparent 1.6px),
+    radial-gradient(circle at 47% 4%, #fff9c8 0 1.5px, transparent 2px),
+    radial-gradient(circle at 82% 22%, #fff 0 1px, transparent 1.6px),
+    radial-gradient(circle at 92% 65%, #fff9c8 0 1px, transparent 1.6px),
+    radial-gradient(ellipse at 63% 10%, #214b9c 0, transparent 36%),
+    linear-gradient(150deg, #06132f 10%, #0b2860 55%, #071a40);
     background-size: 310px 220px, 420px 350px, 390px 270px, 280px 290px, auto, auto;
 }
 a{
@@ -130,7 +130,7 @@ nav li a.active{
     font: 600 clamp(36px, 6vw, 64px)/1 "Playfair Display", serif;
     letter-spacing: -.04em;
 }
-.cv-grid {
+.cv-grid{
     display: grid;
     grid-template-columns: .8fr 1.2fr;
     gap: 80px;
@@ -156,20 +156,20 @@ nav li a.active{
 .sidebar-section{
     margin-bottom: 35px;
 }
-.info-list {
+.info-list{
     list-style: none;
     padding: 0;
     margin: 16px 0 0;
 }
-.info-list li {
+.info-list li{
     margin-bottom: 16px;
     padding-bottom: 16px;
     border-bottom: 1px dashed rgba(190, 201, 226, 0.2);
 }
-.info-list li:last-child {
+.info-list li:last-child{
     border-bottom: none;
 }
-.info-list strong {
+.info-list strong{
     display: block;
     color: var(--gold);
     font-family: "DM Mono", monospace;
@@ -177,17 +177,17 @@ nav li a.active{
     letter-spacing: .1em;
     margin-bottom: 4px;
 }
-.info-list span {
+.info-list span{
     font-size: 16px;
     font-weight: 500;
 }
-.skills-tags {
+.skills-tags{
     display: flex;
     flex-wrap: wrap;
     gap: 10px;
     margin-top: 16px;
 }
-.skills-tags span {
+.skills-tags span{
     border: 1px solid rgba(255, 202, 88, 0.4);
     color: var(--paper);
     padding: 8px 14px;
@@ -195,27 +195,27 @@ nav li a.active{
     transition: 0.3s ease;
     background: rgba(11, 40, 96, 0.4);
 }
-.skills-tags span:hover {
+.skills-tags span:hover{
     background: var(--gold);
     color: var(--night);
     border-color: var(--gold);
     cursor: default;
 }
-.timeline {
+.timeline{
     border-left: 2px solid #22407a;
     padding-left: 40px;
     margin-left: 10px;
     margin-top: 20px;
     position: relative;
 }
-.timeline-item {
+.timeline-item{
     position: relative;
     margin-bottom: 50px;
 }
-.timeline-item:last-child {
+.timeline-item:last-child{
     margin-bottom: 0;
 }
-.timeline-item::before {
+.timeline-item::before{
     content: "";
     position: absolute;
     left: -48px;
@@ -226,7 +226,7 @@ nav li a.active{
     border-radius: 50%;
     box-shadow: 0 0 0 6px var(--night), 0 0 0 8px #22407a;
 }
-.timeline-date {
+.timeline-date{
     display: inline-block;
     color: var(--gold);
     font: 500 12px "DM Mono", monospace;
@@ -236,18 +236,18 @@ nav li a.active{
     padding: 4px 10px;
     border-radius: 4px;
 }
-.timeline-item h3 {
+.timeline-item h3{
     margin: 0 0 4px;
     font: 600 24px "Playfair Display", serif;
     color: #fff;
 }
-.timeline-location {
+.timeline-location{
     font-style: italic;
     color: var(--orange);
     font-size: 14px;
     margin: 0 0 12px;
 }
-.timeline-item p {
+.timeline-item p{
     color: var(--muted);
     font-size: 15px;
     line-height: 1.7;
@@ -262,14 +262,15 @@ nav li a.active{
     max-width: 840px;
     margin: 0 auto;
     color: var(--blue);
-    font: 500 clamp(28px,4vw,52px)/1.2 "Playfair Display",serif; letter-spacing:-.04em;
+    font: 500 clamp(28px,4vw,52px)/1.2 "Playfair Display",serif;
+    letter-spacing: -.04em;
 }
 .quote small{
     display: block;
     margin-top: 24px;
-    color:var(--night);
-    font:12px "DM Mono",monospace;
-    letter-spacing:.12em;
+    color: var(--night);
+    font: 12px "DM Mono",monospace;
+    letter-spacing: .12em;
 }
 footer{
     padding: 24px 0 40px;
@@ -279,6 +280,9 @@ footer{
     font: 11px "DM MONO", monospace;
 }
 @media(max-width:768px){
+    .signature{
+        font-size: 20px;
+    }
     nav ul{
         gap: 16px;
         font-size: 10px;
@@ -286,18 +290,18 @@ footer{
     .hero{
         padding-top: 44px;
     }
-    .cv-grid {
+    .cv-grid{
         grid-template-columns: 1fr;
         gap: 50px;
     }
-    .portrait {
+    .portrait{
         max-width: 320px;
         margin: 0 auto 40px auto;
     }
-    .timeline {
+    .timeline{
         padding-left: 25px;
     }
-    .timeline-item::before {
+    .timeline-item::before{
         left: -33px;
         width: 12px;
         height: 12px;
