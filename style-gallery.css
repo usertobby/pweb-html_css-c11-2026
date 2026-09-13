@@ -136,7 +136,7 @@ h2{
     letter-spacing: .14em;
 }
 .wall-hint::before{
-    content: "ÃƒÂ¢Ã…â€œÃ‚Â¦ ";
+    content: "✦ ";
     color: var(--gold);
 }
 .wall{
@@ -317,7 +317,7 @@ footer{
         grid-auto-rows: 230px;
     }
     .art:nth-child(12){
-        grid-column: span 2;
+        grid-column: auto;
     }
     .hero-meta{
         gap: 12px 28px;
