@@ -354,6 +354,9 @@ footer{
     font: 11px "DM MONO", monospace;
 }
 @media(max-width:720px){
+    .signature{
+        font-size: 20px;
+    }
     nav ul{
         gap: 16px;
         font-size: 10px;
@@ -391,6 +394,12 @@ footer{
     footer{
         gap: 12px;
         flex-direction: column;
+    }
+    .fact-row{
+        margin-top: 20px;
+    }
+    .about-links{
+        margin-top: 30px;
     }
 }
 
